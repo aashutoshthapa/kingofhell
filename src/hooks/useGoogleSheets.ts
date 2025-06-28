@@ -8,6 +8,10 @@ export interface SheetMember {
   clanGames: number
   donation: number
   capGold: number
+  perfectWars: number
+  warsMissed: number
+  perfectMonth: boolean
+  cwlPerformance: string
 }
 
 export function useGoogleSheets() {
@@ -42,14 +46,18 @@ export function useGoogleSheets() {
         // Parse CSV line (handle commas in quoted fields)
         const columns = parseCSVLine(line)
         
-        if (columns.length >= 6 && columns[0] && columns[1]) {
+        if (columns.length >= 10 && columns[0] && columns[1]) {
           const member: SheetMember = {
             playerName: columns[0].trim(),
             playerTag: columns[1].trim(),
             trophy: parseInt(columns[2]) || 0,
             clanGames: parseInt(columns[3]) || 0,
             donation: parseInt(columns[4]) || 0,
-            capGold: parseInt(columns[5]) || 0
+            capGold: parseInt(columns[5]) || 0,
+            perfectWars: parseInt(columns[6]) || 0,
+            warsMissed: parseInt(columns[7]) || 0,
+            perfectMonth: columns[8]?.toUpperCase() === 'TRUE' || columns[8]?.toUpperCase() === 'YES',
+            cwlPerformance: columns[9]?.trim() || ''
           }
           
           // Only add if we have valid player name and tag
@@ -89,15 +97,17 @@ export function useGoogleSheets() {
           current_capital_gold: member.capGold,
           current_clan_games: member.clanGames,
           
-          // Preserve existing manual data
+          // Use new data from Google Sheets
+          perfect_wars: member.perfectWars,
+          wars_missed: member.warsMissed,
+          perfect_month: member.perfectMonth,
+          cwl_performance: member.cwlPerformance || null,
+          
+          // Preserve existing manual data for fields not in sheet
           discord_handle: existingData?.discord_handle || null,
           total_donations: Math.max(member.donation, existingData?.total_donations || 0),
           clan_games_points: member.clanGames,
           total_clan_games: Math.max(member.clanGames, existingData?.total_clan_games || 0),
-          perfect_wars: existingData?.perfect_wars || 0,
-          wars_missed: existingData?.wars_missed || 0,
-          perfect_month: existingData?.perfect_month || false,
-          cwl_performance: existingData?.cwl_performance || null,
           
           // Achievement totals for tracking
           total_donations_achievement: Math.max(member.donation, existingData?.total_donations_achievement || 0),
