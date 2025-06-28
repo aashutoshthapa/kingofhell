@@ -1,5 +1,5 @@
 import React from 'react';
-import { Trophy, Target, Ticket, Gift, Coins, Star } from 'lucide-react';
+import { Trophy, Target, Ticket } from 'lucide-react';
 import { calculateTrophyTickets, calculateDonationTickets, calculateClanGamesTickets, calculateRaidTickets } from '../utils/statsCalculator';
 
 interface Member {
@@ -191,7 +191,11 @@ export default function MembersTable({ members, darkMode = false }: MembersTable
                 {/* Donation - API Data (Monthly) */}
                 <td className={`px-4 py-4 whitespace-nowrap text-sm font-medium ${darkMode ? 'text-green-400' : 'text-green-600'}`}>
                   <div className="flex items-center gap-1">
-                    <Gift className="h-4 w-4" />
+                    <img 
+                      src="/images/donation.png" 
+                      alt="Donation" 
+                      className="h-4 w-4" 
+                    />
                     {formatNumber(member.current_donations)}
                   </div>
                 </td>
@@ -207,7 +211,11 @@ export default function MembersTable({ members, darkMode = false }: MembersTable
                 {/* Clan Games - API Data (Monthly) or Manual */}
                 <td className={`px-4 py-4 whitespace-nowrap text-sm ${darkMode ? 'text-purple-400' : 'text-purple-600'}`}>
                   <div className="flex items-center gap-1">
-                    <Star className="h-4 w-4" />
+                    <img 
+                      src="/images/clan-games.png" 
+                      alt="Clan Games" 
+                      className="h-4 w-4" 
+                    />
                     {formatNumber(member.current_clan_games || member.clan_games_points)}
                   </div>
                 </td>
@@ -223,7 +231,11 @@ export default function MembersTable({ members, darkMode = false }: MembersTable
                 {/* Capital Gold Looted - API Data (Monthly) */}
                 <td className={`px-4 py-4 whitespace-nowrap text-sm font-medium ${darkMode ? 'text-orange-300' : 'text-orange-700'}`}>
                   <div className="flex items-center gap-1">
-                    <Coins className="h-4 w-4" />
+                    <img 
+                      src="/images/capital-gold.png" 
+                      alt="Capital Gold" 
+                      className="h-4 w-4" 
+                    />
                     {formatNumber(member.current_capital_gold || 0)}
                   </div>
                 </td>

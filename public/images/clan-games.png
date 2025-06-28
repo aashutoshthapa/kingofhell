@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html
+    class="mod mod-hub hub-light"
+    lang="en"
+    data-guideline-current-language="en">
+    <head>
+        <title>Game assets - Clash of Clans</title>
+
+
+
+<!-- Favicon -->
+
+<link
+    rel="icon"
+    href="https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJwYXRoIjoic3VwZXJjZWxsXC9maWxlXC9zaDZFZEF4Y0I0M1ptajhlQWV3Uy5wbmcifQ:supercell:pHpt0uyryFfHL2BjX3785TbNtJnYj27e4iWB78AjLA4?width={width}"
+    type="image/png"
+/>
+
+
+<!-- This product is built using third-party software, as described here: https://app.frontify.com/licenses.md -->
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="https://cdn.frontify.com/css/frontify-common.eb5531023a3acc4a.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.frontify.com/css/frontify-guideline.d3b3153057c175ed.css" />
+
+<meta name="x-csrf-token" content="302c912cd197ca1fcbaea37405bc488e48dd00a3f62222366aefb71ca6553854">
+
+
+<meta property="og:title" content="Supercell Brand" />
+
+<meta property="og:description" content="Your one-stop shop for all Supercell assets." />
+<meta property="og:image" content="https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJwYXRoIjoic3VwZXJjZWxsXC9maWxlXC9iUkxySzZKM0M5dUhTWGdrWFVuby5qcGcifQ:supercell:PcMCsxzVDFy0iyk43ZhFzKL3r0m8j91h-BxrZ56fQag" />
+<meta name="description" content="Your one-stop shop for all Supercell assets." />
+
+
+<style class="hub-appearance-css" type="text/css">@font-face {font-display: swap;font-family: "Clash_Bold";src: url("/api/font-file/50422?format=otf&project_id=161") format("opentype");font-weight: 700;font-style: normal;}@font-face {font-display: swap;font-family: "Clash_Regular";src: url("/api/font-file/50423?format=otf&project_id=161") format("opentype");font-weight: 400;font-style: normal;}@font-face {font-display: swap;font-family: "lilitaone-regular-webfont";src: url("/api/font-file/51087?format=ttf&project_id=153") format("truetype");font-weight: 400;font-style: normal;}@font-face {font-display: swap;font-family: "Clash_Bold";src: url("/api/font-file/62335?format=otf&project_id=158") format("opentype");font-weight: 700;font-style: normal;}@font-face {font-display: swap;font-family: "Clash_Regular";src: url("/api/font-file/62336?format=otf&project_id=158") format("opentype");font-weight: 400;font-style: normal;}@font-face {font-display: swap;font-family: "SquadLatin-Black";src: url("/api/font-file/71864?format=otf&project_id=186") format("opentype");font-weight: 900;font-style: normal;}@font-face {font-display: swap;font-family: "SquadLatin-BlackItalic";src: url("/api/font-file/71865?format=otf&project_id=186") format("opentype");font-weight: 900;font-style: italic;}@font-face {font-display: swap;font-family: "SquadLatin-Bold";src: url("/api/font-file/71866?format=otf&project_id=186") format("opentype");font-weight: 700;font-style: normal;}@font-face {font-display: swap;font-family: "SquadLatin-ExtraBold";src: url("/api/font-file/71867?format=otf&project_id=186") format("opentype");font-weight: 800;font-style: normal;}@font-face {font-display: swap;font-family: "SquadLatin-ExtraBoldItalic";src: url("/api/font-file/71868?format=otf&project_id=186") format("opentype");font-weight: 800;font-style: italic;}@font-face {font-display: swap;font-family: "SquadLatin-Italic";src: url("/api/font-file/71869?format=otf&project_id=186") format("opentype");font-weight: 400;font-style: italic;}@font-face {font-display: swap;font-family: "SquadLatin-Regular";src: url("/api/font-file/71870?format=otf&project_id=186") format("opentype");font-weight: 400;font-style: normal;}@font-face {font-display: swap;font-family: "mocoSans";src: url("/api/font-file/89421?format=woff&project_id=232") format("woff"),url("/api/font-file/89422?format=woff2&project_id=232") format("woff2"),url("/api/font-file/89423?format=ttf&project_id=232") format("truetype");font-weight: 400;font-style: normal;}@font-face {font-display: swap;font-family: "mocoSans";src: url("/api/font-file/89424?format=woff&project_id=232") format("woff"),url("/api/font-file/89425?format=woff2&project_id=232") format("woff2"),url("/api/font-file/89426?format=ttf&project_id=232") format("truetype");font-weight: 600;font-style: normal;}@font-face {font-display: swap;font-family: "mocoSans";src: url("/api/font-file/91750?format=woff&project_id=232") format("woff"),url("/api/font-file/91751?format=woff2&project_id=232") format("woff2"),url("/api/font-file/91752?format=ttf&project_id=232") format("truetype");font-weight: 400;font-style: normal;}@font-face {font-display: swap;font-family: "mocoSans";src: url("/api/font-file/91753?format=woff&project_id=232") format("woff"),url("/api/font-file/91754?format=woff2&project_id=232") format("woff2"),url("/api/font-file/91755?format=ttf&project_id=232") format("truetype");font-weight: 400;font-style: italic;}@font-face {font-display: swap;font-family: "mocoSans";src: url("/api/font-file/91756?format=woff&project_id=232") format("woff"),url("/api/font-file/91757?format=woff2&project_id=232") format("woff2"),url("/api/font-file/91758?format=ttf&project_id=232") format("truetype");font-weight: 600;font-style: normal;}@font-face {font-display: swap;font-family: "mocoSans";src: url("/api/font-file/91759?format=woff&project_id=232") format("woff"),url("/api/font-file/91760?format=woff2&project_id=232") format("woff2"),url("/api/font-file/91761?format=ttf&project_id=232") format("truetype");font-weight: 600;font-style: italic;}@font-face {font-display: swap;font-family: "mocoSans";src: url("/api/font-file/91762?format=woff&project_id=232") format("woff"),url("/api/font-file/91763?format=woff2&project_id=232") format("woff2"),url("/api/font-file/91764?format=ttf&project_id=232") format("truetype");font-weight: 700;font-style: normal;}@font-face {font-display: swap;font-family: "mocoSans";src: url("/api/font-file/91765?format=woff&project_id=232") format("woff"),url("/api/font-file/91766?format=woff2&project_id=232") format("woff2"),url("/api/font-file/91767?format=ttf&project_id=232") format("truetype");font-weight: 700;font-style: italic;}@font-face {font-display: swap;font-family: "mocoDisplay";src: url("/api/font-file/91768?format=woff&project_id=232") format("woff");font-weight: 400;font-style: normal;}@font-face {font-display: swap;font-family: "mocoSans-Black";src: url("/api/font-file/92542?format=otf&project_id=232") format("opentype");font-weight: 900;font-style: normal;}@font-face {font-display: swap;font-family: "mocoSans-BlackItalic";src: url("/api/font-file/92543?format=otf&project_id=232") format("opentype");font-weight: 900;font-style: italic;}@font-face {font-display: swap;font-family: "mocoSans-BoldItalic";src: url("/api/font-file/92545?format=otf&project_id=232") format("opentype");font-weight: 700;font-style: italic;}@font-face {font-display: swap;font-family: "mocoSans-RegularItalic";src: url("/api/font-file/92547?format=otf&project_id=232") format("opentype");font-weight: 400;font-style: italic;}@font-face {font-display: swap;font-family: "mocoSans-Regular";src: url("/api/font-file/92546?format=otf&project_id=232") format("opentype");font-weight: 400;font-style: normal;}@font-face {font-display: swap;font-family: "mocoSans-Bold";src: url("/api/font-file/92544?format=otf&project_id=232") format("opentype");font-weight: 700;font-style: normal;}@font-face {font-display: swap;font-family: "mocoSans-Black";src: url("/api/font-file/92548?format=ttf&project_id=232") format("truetype");font-weight: 900;font-style: normal;}@font-face {font-display: swap;font-family: "mocoSans-BlackItalic";src: url("/api/font-file/92549?format=ttf&project_id=232") format("truetype");font-weight: 900;font-style: italic;}@font-face {font-display: swap;font-family: "mocoSans-Bold";src: url("/api/font-file/92550?format=ttf&project_id=232") format("truetype");font-weight: 700;font-style: normal;}@font-face {font-display: swap;font-family: "mocoSans-BoldItalic";src: url("/api/font-file/92551?format=ttf&project_id=232") format("truetype");font-weight: 700;font-style: italic;}@font-face {font-display: swap;font-family: "mocoSans-Regular";src: url("/api/font-file/92552?format=ttf&project_id=232") format("truetype");font-weight: 400;font-style: normal;}@font-face {font-display: swap;font-family: "mocoSans-RegularItalic";src: url("/api/font-file/92553?format=ttf&project_id=232") format("truetype");font-weight: 400;font-style: italic;}.a-p, .page-content .block, .co-editor, .cm-setting-typostyle__label--body, .cm-setting-typostyle__preview--body{font-family: "Clash_Regular", "Space Grotesk Frontify", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";color: var(--f-theme-settings-body-color, rgb(103, 103, 103));font-size: 15px;line-height: 1.3;font-weight: normal;text-transform: none;font-style: normal;text-decoration: none;letter-spacing: normal;}.a-h1, .page-content .page-title, .co-editor h1, .co-editor h1, .cm-setting-typostyle__label--heading1, .cm-setting-typostyle__preview--heading1, .quill-h1, .a-image-caption h1{font-family: "Clash_Regular", "Space Grotesk Frontify", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";color: var(--f-theme-settings-heading1-color, rgba(0,0,0,1));font-size: 30px;line-height: 1.3;font-weight: normal;text-transform: none;font-style: normal;text-decoration: none;margin-top: 0;margin-bottom: 10px;letter-spacing: normal;}.a-h2, .page-content .block h2, .co-editor h2, .co-editor h2, .cm-setting-typostyle__label--heading2, .cm-setting-typostyle__preview--heading2, .quill-h2, .a-image-caption h2{font-family: "Clash_Regular", "Space Grotesk Frontify", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";color: var(--f-theme-settings-heading2-color, rgba(0,0,0,1));font-size: 22px;line-height: 1.3;font-weight: bold;text-transform: none;font-style: normal;text-decoration: none;margin-top: 0;margin-bottom: 10px;letter-spacing: normal;}.a-h3, .page-content .block h3, .co-editor h3, .cm-setting-typostyle__label--heading3, .cm-setting-typostyle__preview--heading3, .quill-h3, .a-image-caption h3{font-family: "Clash_Regular", "Space Grotesk Frontify", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";color: var(--f-theme-settings-heading3-color, rgba(0,0,0,1));font-size: 18px;line-height: 1.3;font-weight: bold;text-transform: none;font-style: normal;text-decoration: none;margin-top: 0;margin-bottom: 10px;letter-spacing: normal;}.a-h4, .page-content .block h4, .co-editor h4, .cm-setting-typostyle__label--heading4, .cm-setting-typostyle__preview--heading4, .quill-h4, .a-image-caption h4{font-family: "Clash_Regular", "Space Grotesk Frontify", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";color: var(--f-theme-settings-heading4-color, rgba(0,0,0,1));font-size: 16px;line-height: 1.3;font-weight: bold;text-transform: none;font-style: normal;text-decoration: none;margin-top: 0;margin-bottom: 10px;letter-spacing: normal;}.o-collection-area__title, .o-library__assets-title, .o-library__document-category-title{font-family: "Clash_Regular", "Space Grotesk Frontify", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";color: var(--f-theme-settings-heading2-color, rgba(0,0,0,1));font-size: 18px;line-height: 1.3;font-weight: bold;text-transform: none;font-style: normal;text-decoration: none;margin-top: 0;margin-bottom: 0;letter-spacing: normal;}.a-custom1, .co-editor .custom1, .cm-setting-typostyle__label--custom1, .cm-setting-typostyle__preview--custom1, .quill-custom1, .a-image-caption .custom1{font-family: "Clash_Regular", "Space Grotesk Frontify", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";color: var(--f-theme-settings-custom1-color, rgba(0,0,0,1));font-size: 16px;line-height: 1.3;font-weight: bold;text-transform: none;font-style: normal;text-decoration: none;margin-top: 0;margin-bottom: 10px;letter-spacing: normal;}.a-custom2, .co-editor .custom2, .cm-setting-typostyle__label--custom2, .cm-setting-typostyle__preview--custom2, .quill-custom2, .a-image-caption .custom2{font-family: "Clash_Regular", "Space Grotesk Frontify", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";color: var(--f-theme-settings-custom2-color, rgba(0,0,0,1));font-size: 16px;line-height: 1.3;font-weight: bold;text-transform: none;font-style: normal;text-decoration: none;margin-top: 0;margin-bottom: 10px;letter-spacing: normal;}.a-custom3, .co-editor .custom3, .cm-setting-typostyle__label--custom3, .cm-setting-typostyle__preview--custom3, .quill-custom3, .a-image-caption .custom3{font-family: "Clash_Regular", "Space Grotesk Frontify", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";color: var(--f-theme-settings-custom3-color, rgba(0,0,0,1));font-size: 16px;line-height: 1.3;font-weight: bold;text-transform: none;font-style: normal;text-decoration: none;margin-top: 0;margin-bottom: 10px;letter-spacing: normal;}.a-quote, .page-content .block .quote, .cm-setting-typostyle__label--quote, .co-editor blockquote, .co-editor blockquote .link, .cm-setting-typostyle__preview--quote, .quill-blockquote, .a-image-caption blockquote{font-family: "Clash_Regular", "Space Grotesk Frontify", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";color: var(--f-theme-settings-quote-color, rgb(103, 103, 103));font-size: 24px;line-height: 1.3;font-weight: normal;text-transform: none;font-style: normal;text-decoration: none;margin-bottom: 10px;letter-spacing: normal;}.a-image-title, .page-content .block .a-image-title, .cm-setting-typostyle__label--image-title, .cm-setting-typostyle__preview--image-title{font-family: "Clash_Regular", "Space Grotesk Frontify", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";color: var(--f-theme-settings-image-title-color, rgba(0,0,0,1));font-size: 15px;line-height: 1.4;font-weight: normal;text-transform: none;font-style: normal;text-decoration: none;margin-top: 0;margin-bottom: 3px;letter-spacing: normal;}.a-image-caption, .page-content .block .a-image-caption, .co-editor--image-caption, .cm-setting-typostyle__label--image-caption, .cm-setting-typostyle__preview--image-caption{font-family: "Clash_Regular", "Space Grotesk Frontify", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";color: var(--f-theme-settings-image-caption-color, rgb(153, 153, 153));font-size: 13.5px;line-height: 1.5;font-weight: normal;text-transform: none;font-style: normal;text-decoration: none;letter-spacing: normal;position: relative;}.a-link, .mod-block-text .richtext a, .co-editor .link, .cm-setting-typostyle__label--link, .cm-setting-typostyle__preview--link, .a-image-caption .link, .a-image-title .link{font-family: "Clash_Regular", "Space Grotesk Frontify", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";color: var(--f-theme-settings-link-color, rgb(74, 144, 226));font-size: inherit;line-height: 1.3;font-weight: inherit;text-transform: none;font-style: normal;text-decoration: none;margin-bottom: 10px;letter-spacing: normal;}.a-link--color, .ffy-lnk, .o-medialibrary__filter-selected, .o-medialibrary__filter-radio:checked ~ .o-medialibrary__filter-bubble, .b-imagegrid__desc .link{color: var(--f-theme-settings-link-color, rgb(74, 144, 226));}.cm-setting-typostyle__label--body, .cm-setting-typostyle__preview--body, .cm-setting-typostyle__label--documents, .cm-setting-typostyle__preview--documents, .cm-setting-typostyle__label--categories, .cm-setting-typostyle__preview--categories, .cm-setting-typostyle__label--pages, .cm-setting-typostyle__preview--pages, .cm-setting-typostyle__label--sections, .cm-setting-typostyle__preview--sections, .cm-setting-typostyle__label--heading1, .cm-setting-typostyle__preview--heading1, .cm-setting-typostyle__label--heading2, .cm-setting-typostyle__preview--heading2, .cm-setting-typostyle__label--heading3, .cm-setting-typostyle__preview--heading3, .cm-setting-typostyle__label--heading4, .cm-setting-typostyle__preview--heading4, .cm-setting-typostyle__label--custom1, .cm-setting-typostyle__preview--custom1, .cm-setting-typostyle__label--custom2, .cm-setting-typostyle__preview--custom2, .cm-setting-typostyle__label--custom3, .cm-setting-typostyle__preview--custom3, .cm-setting-typostyle__label--link, .cm-setting-typostyle__preview--link, .cm-setting-typostyle__label--quote, .cm-setting-typostyle__preview--quote, .cm-setting-typostyle__label--image-title, .cm-setting-typostyle__preview--image-title, .cm-setting-typostyle__label--image-caption, .cm-setting-typostyle__preview--image-caption{line-height: 1;margin: 0;}.a-navigation-categories, .document-sidebar .nav-pages h4, .cm-setting-typostyle__preview--categories, .cm-setting-typostyle__label--categories{font-family: "Clash_Regular", "Space Grotesk Frontify", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";color: rgba(0,0,0,0.3);font-size: 11px;line-height: 1.3;font-weight: 700;text-transform: uppercase;font-style: normal;text-decoration: none;letter-spacing: normal;}.m-navdocuments__mobile-category-title{font-family: "Clash_Regular", "Space Grotesk Frontify", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";font-weight: 700;text-transform: uppercase;font-style: normal;text-decoration: none;letter-spacing: normal;}.a-navigation-pages, .document-sidebar .nav-pages .item > a, .cm-setting-typostyle__preview--pages, .cm-setting-typostyle__label--pages, .document-sidebar .nav-pages .item > a > i{font-family: "Clash_Regular", "Space Grotesk Frontify", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";color: rgba(85,85,85,1);font-size: 13px;line-height: 1.3;font-weight: normal;text-transform: none;font-style: normal;text-decoration: normal;letter-spacing: normal;hyphens: none;-webkit-hyphens: none;}.m-navdocuments__mobile-page-link{font-family: "Clash_Regular", "Space Grotesk Frontify", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";font-weight: normal;text-transform: none;font-style: normal;text-decoration: normal;letter-spacing: normal;}.a-navigation-pages, .document-sidebar .nav-pages .item > a:hover, .document-sidebar .nav-pages .item > a:hover > i{color: rgba(85,85,85,1);background: #F8F8F8;font-size: 13px;line-height: none;font-weight: normal;text-transform: none;font-style: normal;text-decoration: none;letter-spacing: normal;}.a-navigation-pages, .document-sidebar .nav-pages .item.item-active > a, .document-sidebar .nav-pages .item.item-active > a > i{color: rgba(85,85,85,1);background: transparent;font-size: 13px;line-height: 1.3;font-weight: normal;text-transform: none;font-style: normal;text-decoration: none;letter-spacing: normal;}.a-navigation-pages--active, .document-sidebar .nav-pages .item-active > a{font-weight: 700;}.a-navigation-sections, .document-sidebar .nav-sections > li > a, .cm-setting-typostyle__preview--sections, .cm-setting-typostyle__label--sections{font-family: "Clash_Regular", "Space Grotesk Frontify", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";color: rgba(136,136,136,1);font-size: 13px;line-height: 1.3;font-weight: normal;text-transform: none;font-style: normal;text-decoration: none;letter-spacing: normal;}.a-button-primary, .a-button-secondary, .a-button-tertiary, .cm-setting-button__button--button_primary, .cm-setting-button__instant-preview-button--button_primary, .btn-primary, .cm-setting-button__button--button_secondary, .cm-setting-button__instant-preview-button--button_secondary, .btn-secondary, .cm-setting-button__button--button_tertiary, .cm-setting-button__instant-preview-button--button_tertiary, .btn-tertiary{display: inline-block;border-style: solid;text-decoration: none;cursor: pointer;transition: all 0.2s ease-in-out;-webkit-transition: all 0.2s ease-in-out;-moz-transition: all 0.2s ease-in-out;-o-transition: all 0.2s ease-in-out;}.a-button-primary, .cm-setting-button__button--button_primary, .cm-setting-button__instant-preview-button--button_primary, .btn-primary{font-family: "Clash_Regular", "Space Grotesk Frontify", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";color: var(--f-theme-settings-button-primary-color, rgb(255, 255, 255));font-size: 13px;line-height: 1.3;font-weight: 400;text-transform: none;font-style: normal;border-width: 2px;border-radius: 5px;border-color: var(--f-theme-settings-button-primary-border-color, rgb(0, 0, 0));background-color: var(--f-theme-settings-button-primary-background-color, rgb(0, 0, 0));padding-top: 10px;padding-right: 20px;padding-bottom: 10px;padding-left: 20px;}.a-button-primary:hover, .a-button-primary:active, .btn-primary:hover, .btn-primary:active{color: var(--f-theme-settings-button-primary-color-hover, rgb(255, 255, 255));border-color: var(--f-theme-settings-button-primary-border-color-hover, rgb(50, 0, 236));background-color: var(--f-theme-settings-button-primary-background-color-hover, rgb(61, 7, 255));}.a-button-secondary, .cm-setting-button__button--button_secondary, .cm-setting-button__instant-preview-button--button_secondary, .btn-secondary{font-family: "Clash_Regular", "Space Grotesk Frontify", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";color: var(--f-theme-settings-button-secondary-color, rgba(102,102,102,1));font-size: 13px;line-height: 1.3;font-weight: normal;text-transform: none;font-style: normal;border-width: 2px;border-radius: 5px;border-color: var(--f-theme-settings-button-secondary-border-color, rgba(206,206,206,1.00));background-color: var(--f-theme-settings-button-secondary-background-color, rgba(230,230,230,1));padding-top: 10px;padding-right: 20px;padding-bottom: 10px;padding-left: 20px;}.a-button-secondary:hover, .a-button-secondary:active, .btn-secondary:hover, .btn-secondary:active{color: var(--f-theme-settings-button-secondary-color-hover, rgba(76,76,76,1.00));border-color: var(--f-theme-settings-button-secondary-border-color-hover, rgba(154,154,154,1.00));background-color: var(--f-theme-settings-button-secondary-background-color-hover, rgba(172,172,172,1.00));}.a-button-tertiary, .cm-setting-button__button--button_tertiary, .cm-setting-button__instant-preview-button--button_tertiary, .btn-tertiary{font-family: "Clash_Regular", "Space Grotesk Frontify", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";color: var(--f-theme-settings-button-tertiary-color, rgba(15,117,241,1.00));font-size: 13px;line-height: 1.3;font-weight: normal;text-transform: none;font-style: normal;border-width: 2px;border-radius: 5px;border-color: var(--f-theme-settings-button-tertiary-border-color, rgba(45,133,243,1.00));background-color: var(--f-theme-settings-button-tertiary-background-color, rgba(255,255,255,1));padding-top: 10px;padding-right: 20px;padding-bottom: 10px;padding-left: 20px;}.a-button-tertiary:hover, .a-button-tertiary:active, .btn-tertiary:hover, .btn-tertiary:active{color: var(--f-theme-settings-button-tertiary-color-hover, rgba(11,91,188,1.00));border-color: var(--f-theme-settings-button-tertiary-border-color-hover, rgba(11,97,202,1.00));background-color: var(--f-theme-settings-button-tertiary-background-color-hover, rgba(255,255,255,1));}.document-sidebar{position: absolute;}.cm-btn--brandcolor-inverted{background: rgba(255,255,255,1);border-color: rgba(255,255,255,1);color: rgb(45, 133, 243);}.cm-btn--brandcolor-inverted:hover, .cm-btn--brandcolor-inverted:active, .cm-btn--brandcolor-inverted:focus{background: rgb(45, 133, 243);border-color: rgba(255,255,255,1);color: rgba(255,255,255,1);}.block-dosanddonts-images__grid--dos .block-dosanddonts-images__grid__item__title{border-color: rgba(85,117,85,1.00);color: rgba(85,117,85,1.00);}.block-dosanddonts-images__grid--donts .block-dosanddonts-images__grid__item__title{border-color: rgba(227,20,13,1.00);color: rgba(227,20,13,1.00);}.block-dosanddonts-images__grid--donts .block-dosanddonts-images__grid__item__figure::after{background-color: rgba(227,20,13,1.00);}.block-dosanddonts-images__icon-do{font-size: 18px;color: rgba(85,117,85,1.00);}.block-dosanddonts-images__icon-dont{font-size: 18px;color: rgba(227,20,13,1.00);}.block-dosanddonts-images__title-container{margin-bottom: 10px;}.a-main-font{font-family: "Clash_Regular", "Space Grotesk Frontify", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";}</style>
+<style class="document-appearance-css" type="text/css">.o-header, .co-settings__fieldset--header-typostyles .cm-setting[data-type="typostyle"], .co-settings__fieldset--header-typostyles .cm-setting-typostyle__preview--documents, .co-settings__fieldset--header-typostyles .cm-setting-typostyle__preview--heading, .co-settings__fieldset--header-typostyles .cm-setting-typostyle__preview--subheading, .co-settings__headersize .cm-setting-headersize__size-head{background: rgb(255, 255, 255);}.m-navdocuments__item-link, .m-navdocuments__dropdown-item-toggle, .m-navdocuments__more-items .m-navdocuments__item-link, .m-navdocuments__item-toggle, .cm-setting-typostyle__preview--documents, .cm-setting-typostyle__label--documents, .m-nav-search__input, .nav-brandportal__item, .m-navdocuments__icon-more{font-family: "Clash_Regular", "Space Grotesk Frontify", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";color: rgba(0,0,0,0.8);font-size: 18px;letter-spacing: 0;line-height: 1.3;font-weight: 700;text-transform: none;font-style: normal;text-decoration: none;}.m-navdocuments__mobile-item-link, .m-navdocuments__mobile-document-group-toggle{font-family: "Clash_Regular", "Space Grotesk Frontify", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";font-weight: 700;text-transform: none;font-style: normal;text-decoration: none;}.m-navdocuments__open-document-setting{color: rgba(0,0,0,0.8);border-color: rgba(0,0,0,0.3);background: transparent;}.m-navdocuments__open-document-setting:hover, .m-navdocuments__open-document-setting:active{color: rgba(0,0,0,1.00);border-color: rgba(0,0,0,0.3);}.m-navdocuments__activate{color: rgba(0,0,0,0.8);border-color: rgba(0,0,0,0.3);background: transparent;}.m-navdocuments__activate:hover, .m-navdocuments__activate:active, .m-navdocuments__activate:focus{color: rgba(0,0,0,1.00);border-color: rgba(0,0,0,1.00);}.m-navdocuments__item--border-before{border-color: rgba(0,0,0,0.8);}.m-navdocuments__item-link.state-active, .m-navdocuments__item-toggle.state-active, .m-navdocuments__item-link:hover, .m-navdocuments__item-toggle:hover, .m-navdocuments__toggle-settings, .m-navdocuments__item--more:hover > .m-navdocuments__item-link, .nav-brandportal__item:hover{color: rgba(0,0,0,1.00);}.m-navdocuments__item-link.state-active, .m-navdocuments__item-toggle.state-active{border-bottom: 2px solid;border-color: rgba(0,0,0,0.8);}.m-navdocuments__more-items .m-navdocuments__item-link.state-active, .m-navdocuments__more-items .m-navdocuments__item-toggle.state-active{border-bottom: none;}.m-navdocuments__toggle{color: rgba(0,0,0,0.8);}.m-navdocuments__toggle:hover, .m-navdocuments__toggle:active{color: rgba(0,0,0,1.00);}.o-header__logo-wrapper{left: 0px;top: -17px;}.o-header__logo-upload{font-family: "Clash_Regular", "Space Grotesk Frontify", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";font-size: 18px;line-height: 1.3;font-weight: 700;text-transform: none;font-style: normal;}.m-nav-search__icon, .m-nav-search__input, .nav-brandportal__item, .nav-tools__lang-toggle, .nav-tools__print{color: rgba(0,0,0,0.8);}.mod-c-brand-portal-link:hover{color: rgba(0,0,0,1.00);}.m-nav-search__icon:hover, .m-nav-search__icon-active, .nav-tools__lang-toggle:hover, .nav-tools__print:hover{color: rgba(0,0,0,1.00);}.m-nav-search__input{box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.5);background: rgba(255,255,255,1);color: black;}.m-nav-search__icon-active{color: rgba(0,0,0,1.00);}.editor-enabled .o-header__logo-wrapper{border: 1px dashed rgba(0,0,0,0.8);color: rgba(0,0,0,0.8);}.editor-enabled .o-header__logo-wrapper:hover{border-color: rgba(0,0,0,1.00);color: rgba(0,0,0,1.00);}.cm-setting-typostyle__label--heading, .cm-setting-typostyle__preview--heading, .header-hero__heading{font-family: "Clash_Regular", "Space Grotesk Frontify", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";color: rgba(0,0,0,0.8);letter-spacing: normal;font-size: 48px;line-height: 1.2;font-weight: 400;text-transform: none;font-style: normal;text-decoration: none;margin-top: 0;margin-bottom: 15px;}.cm-setting-typostyle__label--subheading, .cm-setting-typostyle__preview--subheading, .header-hero__subheading{font-family: "Clash_Regular", "Space Grotesk Frontify", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";color: rgba(0,0,0,0.7);font-size: 1.25rem;letter-spacing: normal;line-height: 1.2;font-weight: 400;text-transform: none;font-style: normal;text-decoration: none;margin-top: 0;margin-bottom: 15px;}.co-settings__fieldset--header-typostyles .cm-setting-typostyle__preview--heading, .co-settings__fieldset--header-typostyles .cm-setting-typostyle__preview--documents, .co-settings__fieldset--subheader-typostyles .cm-setting-typostyle__preview--subheading{padding: 10px;}.cm-setting-typostyle__label--heading, .cm-setting-typostyle__preview--heading, .cm-setting-typostyle__label--subheading, .cm-setting-typostyle__preview--subheading{line-height: 1;margin: 0;}.o-header__logo{width: 140px;height: auto;}.o-library__search{border-radius: 26px;}.o-library__search-btn{border-radius: 26px;}.o-librarymain__tile-content--colored{background: rgb(45, 133, 243);color: rgba(255,255,255,1);}</style>
+
+
+
+
+    <!-- lazy load webfonts -->
+    <script src="//ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+    <script type="text/javascript">
+    var data = {"provider":{"google":{"families":["Lilita One:400"]}}};
+    for (p in data.provider) {
+        if (p === 'google') {
+            var request = {'google': data.provider[p]};
+            WebFont.load(request);
+        } else if (p === 'typekit') {
+            for(id in data.provider[p].id) {
+                var token = data.provider[p].id[id];
+                var request = {};
+                request[p] = { id: token };
+                WebFont.load(request);
+            }
+        }
+    }
+    </script>
+
+
+    </head>
+    <body class="mod mod-document document"
+        data-editmode=""
+        data-search-id=""
+        data-search-key=""
+        data-search-prefix=""
+        data-search-filter=""
+        data-visiblity-filter=""
+        data-search-key-public=""
+        data-hub="65"
+        data-hub-title="Clash of Clans"
+        data-authenticated=""
+        data-editor=""
+        data-editing=""
+        data-document="338"
+        data-document-title="Game assets"
+        data-document-mode="MEDIALIBRARY"
+        data-document-token="eyJkb2N1bWVudCI6MzM4LCJ0aW1lc3RhbXAiOjE3NTExMTk1NTJ9:supercell:pULbMl7ftOO4hcc51h1yQKoSz-LbvMg9wFr2zcSsaqE"
+        data-document-heading="Clash of Clans Fankit"
+        data-document-settings="{&quot;project&quot;:160,&quot;facettes&quot;:[{&quot;key&quot;:&quot;asset-type97&quot;,&quot;type&quot;:&quot;metadata&quot;,&quot;field&quot;:174,&quot;order&quot;:0,&quot;title&quot;:&quot;Asset Type&quot;,&quot;column&quot;:0,&quot;multi_selection&quot;:true},{&quot;key&quot;:&quot;characters16&quot;,&quot;type&quot;:&quot;metadata&quot;,&quot;field&quot;:173,&quot;order&quot;:0,&quot;title&quot;:&quot;Characters&quot;,&quot;column&quot;:0,&quot;multi_selection&quot;:true}],&quot;project_slug&quot;:&quot;clash-of-clans-fankit&quot;}"
+        data-project="158"
+        data-project-slug=""
+        data-brand="33"
+        data-printview=""
+        data-baseurl="/d/vkEdmkUCngKw/game-assets"
+        data-searchmapping=""
+        data-user-name=""
+        data-public-link-enabled="1"
+        data-collapsible="disabled"
+        data-share-url-default=""
+        data-translator=""
+        data-main-font-css="Clash_Regular"
+        data-library-project="160"
+        data-library-project-slug="clash-of-clans-fankit"
+        data-translation-language=""
+        data-viewer-theme="dark"
+        data-media-library-appearance="{&quot;viewer_theme&quot;:&quot;dark&quot;,&quot;collection_size&quot;:&quot;small&quot;,&quot;facettes_layout&quot;:&quot;pills&quot;,&quot;collection_layout&quot;:&quot;slider&quot;,&quot;collection_show_border&quot;:&quot;1&quot;,&quot;collection_preview_type&quot;:&quot;cover&quot;,&quot;collection_show_image_count&quot;:&quot;1&quot;,&quot;collection_image_preview_type&quot;:&quot;scale_down&quot;,&quot;container_max_width&quot;:&quot;auto&quot;}"
+        data-sticky="enabled"
+        data-adobe-creative-cloud-libraries-integration-enabled=""
+        data-library-project-targets-enabled="0"
+    >
+        <main class="main-content"
+            
+            data-powerbar-visibility="hidden"
+            
+            data-login-button-settings="{&quot;enabled&quot;:false,&quot;background&quot;:&quot;rgba(45,133,243,1.00)&quot;,&quot;color&quot;:&quot;#fff&quot;}"
+        >
+
+            <div class="mod mod-skip-to-main-content skip-to-main-content"></div>
+
+            <div class="mod mod-c-outstandingpayment co-outstandingpayment"></div>
+
+            <div class="mod mod-c-globalmessage c-globalmessage c-globalmessage--hidden">
+    <div class="c-globalmessage__container js-c-globalmessage__container c-globalmessage__container--fixed"></div>
+    <div class="c-globalmessage__spacer"></div>
+</div>
+
+            <header
+    id="top"
+    class="mod mod-header o-header js-o-header header-size-s"
+>
+    <div class="container row o-header__container">
+        <div class="row o-header__upper">
+            <div class="o-header__main-logo js-o-header__main-logo logo-available">
+                <a
+                    class="o-header__logo-wrapper btn-logo btn-upload btn-upload-logo js-o-header__logo-link"
+                    href="https://fankit.supercell.com/d/vkEdmkUCngKw" 
+                >
+                    
+                    <img
+                        class="js-o-header__logo o-header__logo" src="https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJwYXRoIjoic3VwZXJjZWxsXC9maWxlXC9Ic1RFOHBEWVk5V2dMNFNwMjZzRS5wbmcifQ:supercell:JN0MDt6Q-ERTDgC6Abgxhu9tgvzwQpOwlqNaC0QM3Jc?width={width}"
+                        alt="Go to Clash of Clans"
+                        data-test-id="logo"
+                    />
+                    
+                    
+                    <label
+                        class="o-header__logo-upload"
+                        for="o-header__fileupload-logo"
+                    >
+                        Upload logo
+                    </label>
+                </a>
+            </div>
+
+            <nav
+                class="mod mod-navdocuments"
+                role="navigation"
+                aria-label="Brand documents"
+            ></nav>
+            <div class="header-main__right js-header-main__right">
+                <div class="mod mod-c-brand-portal-link c-brand-portal-link"></div>
+
+                
+
+                
+            </div>
+            <div
+                class="mod mod-settings-header o-settings-header"
+                data-mode="default"
+            ></div>
+        </div>
+    </div>
+    <div class="container row">
+        <div class="js-header-hero header-hero header-hero--center">
+            <h1
+                class="header-hero__heading js-header-hero__heading"
+                data-editable="true"
+                data-field="heading"
+            >
+                Clash of Clans Fankit
+            </h1>
+            <p
+                class="header-hero__subheading js-header-hero__subheading"
+                data-editable="true"
+                data-field="subheading"
+            >
+                Description
+            </p>
+        </div>
+    </div>
+</header>
+
+
+            <div class="container container--library js-container--library row">
+                <div class="js-co-library__container js-skiptomaincontent__target"></div>
+            </div>
+
+            
+        </main>
+
+        <div
+    class="mod mod-terms-banner m-terms-banner state-hidden  "
+    data-enabled=""
+    data-message=""
+    data-message-hash=""
+    data-redirect-url=""
+    data-banner-background-color="rgba(255,255,255,1)"
+    data-banner-shadow-enabled=""
+    data-prevent-user-interaction=""
+    >
+    <div class="m-terms-banner__container js-m-terms-banner__container">
+        <div class="m-terms-banner__message js-m-terms-banner__message"></div>
+        <div class="m-terms-banner__buttons">
+            <button class="m-terms-banner__button js-m-terms-banner__accept a-button-primary">
+                Accept
+            </button>
+            <button class="m-terms-banner__button js-m-terms-banner__decline a-button-secondary">
+                Decline
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="mod mod-c-swal"></div>
+<div class="mod mod-c-payment co-payment clearfix"></div>
+
+<div class="mod mod-c-downloader co-downloader js-co-downloader"></div>
+
+<div class="mod mod-email-change-request"></div>
+
+
+<!-- Setup Global Application Config -->
+<script type="text/javascript">
+window.currentLanguage = "en" || window.currentLanguage;
+
+window.__frontify_do_not_use_or_you_will_be_fired = {
+    context: {"route_initial":true,"view":"styleguide","user":[],"marketplace_app_cdn_url":"https:\/\/frontify-artifacts.com","product":"styleguide","success":true,"brand":{"id":33,"name":"Supercell - Fankit","slug":"supercell-fankit","creator":181869,"color":"rgb(45, 133, 243)","account_id":4001733,"logo_file_id":"9DhQELxYR7WjWLwDzTF9","logo_settings":"[]","image":"https:\/\/cdn-assets-eu.frontify.com\/s3\/frontify-enterprise-files-eu\/eyJwYXRoIjoic3VwZXJjZWxsXC9maWxlXC9UYm9Da3dvM3BuM0IyZFJFUkFVYS5wbmcifQ:supercell:jsxHUFTwE_aKVWoKMHItsb_he-vJghS1ctIEE4U63Lg?width={width}","permission_view_brand_updates_list":false},"project":{"id":158,"account":4001733,"hub_id":65,"project_type":"STYLEGUIDE","permissions":{"view":true,"comment":false,"translate":false,"edit":false,"admin":false}},"features":["ANALYTICS","ASSET_AUDIT_TRAIL","ASSET_EXPIRY_NOTIFICATIONS","ASSET_LIFECYCLE","AUTOMATIONS","AUTO_TAGGING","BRAND_UPDATE","COLLECTIONS","CONDITIONAL_FACETS","CORE_ACCESS_REQUEST","CORE_BRANDED_LOGIN_PAGE","CORE_CUSTOM_EMAIL_TEMPLATE","CORE_CUSTOM_SUBDOMAIN","CORE_MULTIPLE_STYLEGUIDE","CORE_SSO","CORE_USER_GROUPS","CUSTOM_CROPPING","DAM_METADATA","DOWNLOAD_REQUEST","FOCAL_POINT","MARKETPLACE","MARKETPLACE_SHARE_LINK","PUBLIC_API","PUBLISHING_SAVE_TO","REPORTS","STYLEGUIDE_CHANGELOG","STYLEGUIDE_PUBLIC_SHARING","STYLEGUIDE_SEGMENT_ANALYTICS","STYLEGUIDE_STATS","STYLEGUIDE_TERMS","TARGETS","TWO_FACTOR_AUTHENTICATION","WORKSPACE_API_ACCESS","WORKSPACE_EXTERNAL_ASSET_PASSWORD_PROTECTION","WORKSPACE_WORKFLOW","WORKSPACE_WORKFLOW_CUSTOM"],"products":["BRAND_PORTAL","DAM","DOCUMENT_LIBRARY","ICON_LIBRARY","LOGO_LIBRARY","STYLEGUIDE"],"account":{"development_flags":["ACCESS_REQUESTS_DELEGATION","ENABLE_ASSET_TAGS_VECTORIZATION_DAEMON","HIDE_PATTERN_LIBRARY","MARKETPLACE_INTEGRATION","NEW_NAVIGATION_LAYOUT_BACKEND","NEW_REACT_LIBRARY_LIST","NEW_SECTION_WRAPPER","NEW_SECTION_WRAPPER_MIGRATED","OCR_PROCESS_IMAGE_FILES","OCR_PROCESS_IMAGE_FILES_ALL_INSTANCES","OFFICE_CONVERT_API","SHARE_FOLDER_STRUCTURED","SINGLE_SELECT_FACETS_BUGFIX"]},"global_message":{"enabled":false,"text":"","admin_only":true},"authenticated":false},
+    documents: {"brandhome":{"id":65,"title":"Home","url":"https:\/\/fankit.supercell.com\/d\/vkEdmkUCngKw","draft":0,"enabled":0,"active":false,"hide_in_nav":null},"brand_portal":{"enabled":true,"url":"\/","label":"Supercell Fankit"},"items":{"338":{"id":338,"created":"2023-03-21 17:14:06","mode":"MEDIALIBRARY","title":"Game assets","slug":"game-assets","heading":"Clash of Clans Fankit","description":null,"link_type":"internal","link_url":null,"settings":{"project":160,"facettes":[{"key":"asset-type97","type":"metadata","field":174,"order":0,"title":"Asset Type","column":0,"multi_selection":true},{"key":"characters16","type":"metadata","field":173,"order":0,"title":"Characters","column":0,"multi_selection":true}]},"link_settings":null,"appearance":{"logo":{"x":25,"y":8,"width":"140","height":"auto"},"header":{"size":"s","size1":"s"},"background":{"url":null,"i18n":"","color":"rgb(255, 255, 255)","url_crop":{"x":"0","y":"0","width":"","height":""},"url_isWorkspaceAsset":""},"navigation":{"documents":{"size":"18px","color":"rgb(0, 0, 0)","family":"inherit","italic":"","weight":"700","provider":"system","underline":"","uppercase":"","family_css":"inherit","line_height":"1.3","letterspacing":"0"}},"medialibrary":{"viewer_theme":"dark","collection_size":"small","facettes_layout":"pills","collection_layout":"slider","collection_show_border":"1","collection_preview_type":"cover","collection_show_image_count":"1","collection_image_preview_type":"scale_down"}},"sort":1,"background_file_id":null,"background_settings":null,"document_group_id":null,"link":"\/d\/vkEdmkUCngKw\/game-assets"},"337":{"id":337,"created":"2023-03-21 14:50:11","mode":"LOGOLIBRARY","title":"Logo","slug":"logo-1","heading":"Logo","description":null,"link_type":"internal","link_url":null,"settings":{"project":159},"link_settings":null,"appearance":{"logo":{"x":25,"y":8,"width":"140","height":"auto"},"header":{"size":"s","size1":"s"},"background":{"url":null,"i18n":"","color":"rgb(255, 255, 255)","url_crop":"","url_isWorkspaceAsset":""},"navigation":{"documents":{"size":"18px","color":"rgb(0, 0, 0)","family":"inherit","italic":"","weight":"700","provider":"system","underline":"","uppercase":"","family_css":"inherit","line_height":"1.3","letterspacing":"0"}},"medialibrary":{"viewer_theme":"light","collection_size":"small","facettes_layout":"menu","collection_layout":"gallery","collection_show_border":"1","collection_preview_type":"tiled","collection_show_image_count":"","collection_image_preview_type":"filled"}},"sort":2,"background_file_id":null,"background_settings":null,"document_group_id":null,"link":"\/d\/vkEdmkUCngKw\/logo-1"},"333":{"id":333,"created":"2023-03-21 13:31:17","mode":"DEFAULT","title":"Font","slug":"font","heading":"Brawl Stars : Fan Kit","description":null,"link_type":"internal","link_url":null,"settings":null,"link_settings":null,"appearance":{"logo":{"x":25,"y":8,"width":"140","height":"auto"},"header":{"size":"s"},"background":{"url":null,"i18n":"","color":"rgb(255, 255, 255)","url_crop":"","url_isWorkspaceAsset":""},"navigation":{"documents":{"size":"18px","color":"rgb(0, 0, 0)","family":"inherit","italic":"","weight":"700","provider":"system","underline":"","uppercase":"","family_css":"inherit","line_height":"1.3","letterspacing":"0"}}},"sort":3,"background_file_id":null,"background_settings":null,"document_group_id":null,"link":"\/d\/vkEdmkUCngKw\/font"},"334":{"id":334,"created":"2023-03-21 13:31:18","mode":"DEFAULT","title":"Fan Content Policy","slug":"fan-content-policy","heading":"","description":null,"link_type":"external","link_url":"https:\/\/supercell.com\/en\/fan-content-policy\/","settings":null,"link_settings":{"new_tab":true},"appearance":{"logo":{"x":25,"y":8,"width":"100","height":"auto"},"header":{"size":"s","size1":"s"},"background":{"url":"https:\/\/cdn-assets-eu.frontify.com\/s3\/frontify-enterprise-files-eu\/eyJwYXRoIjoic3VwZXJjZWxsXC9maWxlXC84OGpNemhhMXBLM3hHUnh5c0dXeC5wbmcifQ:supercell:cqYS5G4d6hwNjx_ALIj-hPClsTNRyUKFQfcseXNk0aU?width={width}","i18n":"","color":"rgb(42, 89, 219)","url_crop":"","url_isWorkspaceAsset":""},"navigation":{"documents":{"size":"18px","color":"rgb(255, 255, 255)","family":"inherit","italic":"","weight":"700","provider":"system","underline":"","uppercase":"","family_css":"inherit","line_height":"1.3","letterspacing":"0"}},"medialibrary":{"viewer_theme":"light","collection_size":"medium","facettes_layout":"pills","collection_layout":"slider","collection_show_border":"1","collection_preview_type":"tiled","collection_show_image_count":"","collection_image_preview_type":"scale_down"}},"sort":4,"background_file_id":null,"background_settings":null,"document_group_id":null,"link":"https:\/\/supercell.com\/en\/fan-content-policy\/"}},"document_groups":[],"navigation_mode":"default"},
+};
+
+window.APPLICATION_CONFIG = {
+    version: "web-app-2025-06-27T12-54-02Z-bc1870c4",
+    locales: {"de.json":"https:\/\/cdn.frontify.com\/locales\/de.0d6c4e65a07fd5dd.json","en.json":"https:\/\/cdn.frontify.com\/locales\/en.20e33867e7faece2.json","fr.json":"https:\/\/cdn.frontify.com\/locales\/fr.b8edd6d06b918194.json"},
+    sentryClientDsn: "https:\/\/07efd26759d575d252eb3fb4f5539d3d@sentryapp.appsupport.frontify.dev\/51",
+    thirdParty: {
+        amplitude: {
+            enabled: true,
+            region: "EU",
+            amplitudeId: "ebff31b9da313efd071a193786671111",
+            accountId: 4001733,
+            enterpriseEnabled: true,
+            enterpriseId: 4000111,
+            plan: "ENTERPRISE",
+            isPaid: true,
+            isTrial: false,
+            user: {
+                id: null,
+                creator: null,
+                signUpDate: null,
+                referer: null,
+                landing: null,
+            },
+        },
+        intercom: {
+            enabled: false,
+            settings: null,
+        },
+        pusher: {
+            enabled: null,
+            key: null,
+            cluster: null,
+            projectIds: null,
+        },
+        segment: {
+            enabled: false,
+            key: null,
+            user: {
+                signUpMode: null,
+            },
+        },
+        sentry: {
+            enabled: true,
+            dsn: "https:\/\/07efd26759d575d252eb3fb4f5539d3d@sentryapp.appsupport.frontify.dev\/51",
+        },
+    },
+};
+</script>
+
+<!-- load frontify libraries -->
+
+<script data-react-mode="production" src="https://cdn.frontify.com/js/frontify-react-vendors-production.ae39e0134200a682.js"></script>
+
+<script src="https://cdn.frontify.com/js/frontify-runtime.ada32e74421c2043.js"></script>
+<script src="https://cdn.frontify.com/js/frontify-vendors.b9e7954fa0db9c1b.js"></script>
+<script src="https://cdn.frontify.com/js/frontify-common.f2b09c0f805759c0.js"></script>
+<script src="https://cdn.frontify.com/js/frontify-guideline.2790c618e4a45fa4.js"></script>
+
+
+
+<script src="https://cdn.frontify.com/js/frontify-bootstrap.17832f71ce3b51bf.js"></script>
+
+
+        <div class="js-co-viewer__container"></div>
+        <div class="js-co-modals__container co-modals__container"></div>
+    </body>
+</html>
+
