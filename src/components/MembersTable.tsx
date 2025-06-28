@@ -140,24 +140,20 @@ export default function MembersTable({ members, darkMode = false }: MembersTable
         </thead>
         <tbody className={`divide-y ${darkMode ? 'bg-gray-900 divide-gray-700' : 'bg-white divide-gray-200'}`}>
           {members.map((member) => {
-            // Calculate tickets based on current values
-            const trophyTickets = calculateTrophyTickets(member.current_trophies);
-            const donationTickets = calculateDonationTickets(member.current_donations);
-            const clanGamesTickets = calculateClanGamesTickets(member.current_clan_games || member.clan_games_points);
-            const raidTickets = calculateRaidTickets(member.current_capital_gold || 0);
+            // Use ticket values from database (from Google Sheets GHIJ columns)
+            const trophyTickets = member.trophy_tickets || calculateTrophyTickets(member.current_trophies);
+            const donationTickets = member.donation_tickets || calculateDonationTickets(member.current_donations);
+            const clanGamesTickets = member.clan_games_tickets || calculateClanGamesTickets(member.current_clan_games || member.clan_games_points);
+            const raidTickets = member.raid_tickets || calculateRaidTickets(member.current_capital_gold || 0);
             
-            // Calculate additional tickets
-            const perfectWarTickets = (member.perfect_wars || 0) * 2;
-            const noWarMissTickets = (member.wars_missed || 0) === 0 ? 2 : 0;
-            const perfectMonthTickets = member.perfect_month ? 5 : 0;
-            
-            let cwlTickets = 0;
-            if (member.cwl_performance) {
-              const performance = member.cwl_performance.toLowerCase();
-              if (performance === 'excellent') cwlTickets = 5;
-              else if (performance === 'good') cwlTickets = 3;
-              else if (performance === 'average') cwlTickets = 1;
-            }
+            // Use GHIJ values as direct ticket values (from Google Sheets)
+            const perfectWarTickets = member.perfect_wars || 0; // Column G
+            const noWarMissTickets = member.wars_missed || 0; // Column H  
+            const perfectMonthTickets = member.perfect_month ? 1 : 0; // Column I
+            const cwlTickets = member.cwl_performance ? 
+              (member.cwl_performance.toLowerCase() === 'excellent' ? 5 : 
+               member.cwl_performance.toLowerCase() === 'good' ? 3 : 
+               member.cwl_performance.toLowerCase() === 'average' ? 1 : 0) : 0; // Column J
             
             const totalTickets = trophyTickets + donationTickets + clanGamesTickets + raidTickets + 
                                perfectWarTickets + noWarMissTickets + perfectMonthTickets + cwlTickets;

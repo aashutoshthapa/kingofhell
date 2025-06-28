@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { supabase } from '../lib/supabase'
+import { calculateTrophyTickets, calculateDonationTickets, calculateClanGamesTickets, calculateRaidTickets } from '../utils/statsCalculator'
 
 export interface SheetMember {
   playerName: string
@@ -8,10 +9,10 @@ export interface SheetMember {
   clanGames: number
   donation: number
   capGold: number
-  perfectWars: number
-  warsMissed: number
-  perfectMonth: boolean
-  cwlPerformance: string
+  perfectWarTickets: number
+  noWarMissTickets: number
+  perfectMonthTickets: number
+  cwlTickets: number
 }
 
 export function useGoogleSheets() {
@@ -54,10 +55,10 @@ export function useGoogleSheets() {
             clanGames: parseInt(columns[3]) || 0,
             donation: parseInt(columns[4]) || 0,
             capGold: parseInt(columns[5]) || 0,
-            perfectWars: parseInt(columns[6]) || 0,
-            warsMissed: parseInt(columns[7]) || 0,
-            perfectMonth: columns[8]?.toUpperCase() === 'TRUE' || columns[8]?.toUpperCase() === 'YES',
-            cwlPerformance: columns[9]?.trim() || ''
+            perfectWarTickets: parseInt(columns[6]) || 0,
+            noWarMissTickets: parseInt(columns[7]) || 0,
+            perfectMonthTickets: parseInt(columns[8]) || 0,
+            cwlTickets: parseInt(columns[9]) || 0
           }
           
           // Only add if we have valid player name and tag
@@ -97,17 +98,23 @@ export function useGoogleSheets() {
           current_capital_gold: member.capGold,
           current_clan_games: member.clanGames,
           
-          // Use new data from Google Sheets
-          perfect_wars: member.perfectWars,
-          wars_missed: member.warsMissed,
-          perfect_month: member.perfectMonth,
-          cwl_performance: member.cwlPerformance || null,
-          
-          // Preserve existing manual data for fields not in sheet
+          // Preserve existing manual data for original fields
           discord_handle: existingData?.discord_handle || null,
           total_donations: Math.max(member.donation, existingData?.total_donations || 0),
           clan_games_points: member.clanGames,
           total_clan_games: Math.max(member.clanGames, existingData?.total_clan_games || 0),
+          perfect_wars: member.perfectWarTickets,
+          wars_missed: member.noWarMissTickets,
+          perfect_month: member.perfectMonthTickets > 0,
+          cwl_performance: member.cwlTickets === 5 ? 'excellent' : 
+                          member.cwlTickets === 3 ? 'good' : 
+                          member.cwlTickets === 1 ? 'average' : null,
+          
+          // Use GHIJ as direct ticket values (override calculated values)
+          trophy_tickets: calculateTrophyTickets(member.trophy),
+          donation_tickets: calculateDonationTickets(member.donation),
+          clan_games_tickets: calculateClanGamesTickets(member.clanGames),
+          raid_tickets: calculateRaidTickets(member.capGold),
           
           // Achievement totals for tracking
           total_donations_achievement: Math.max(member.donation, existingData?.total_donations_achievement || 0),
