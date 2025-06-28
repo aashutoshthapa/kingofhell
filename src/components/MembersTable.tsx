@@ -17,8 +17,8 @@ interface Member {
   total_clan_games: number;
   perfect_wars: number;
   wars_missed: number;
-  perfect_month: boolean;
-  cwl_performance?: string;
+  perfect_month: number;
+  cwl_performance: number;
   trophy_tickets: number;
   donation_tickets: number;
   clan_games_tickets: number;
@@ -149,11 +149,8 @@ export default function MembersTable({ members, darkMode = false }: MembersTable
             // Use GHIJ values as direct ticket values (from Google Sheets)
             const perfectWarTickets = member.perfect_wars || 0; // Column G
             const noWarMissTickets = member.wars_missed || 0; // Column H  
-            const perfectMonthTickets = member.perfect_month ? 1 : 0; // Column I
-            const cwlTickets = member.cwl_performance ? 
-              (member.cwl_performance.toLowerCase() === 'excellent' ? 5 : 
-               member.cwl_performance.toLowerCase() === 'good' ? 3 : 
-               member.cwl_performance.toLowerCase() === 'average' ? 1 : 0) : 0; // Column J
+            const perfectMonthTickets = member.perfect_month || 0; // Column I - direct ticket value
+            const cwlTickets = member.cwl_performance || 0; // Column J - direct ticket value
             
             const totalTickets = trophyTickets + donationTickets + clanGamesTickets + raidTickets + 
                                perfectWarTickets + noWarMissTickets + perfectMonthTickets + cwlTickets;
@@ -280,9 +277,6 @@ export default function MembersTable({ members, darkMode = false }: MembersTable
                   <div className="flex items-center gap-1">
                     <Ticket className="h-4 w-4" />
                     <span className="font-bold">{cwlTickets}</span>
-                    {member.cwl_performance && (
-                      <span className="text-xs opacity-75">({member.cwl_performance})</span>
-                    )}
                   </div>
                 </td>
                 

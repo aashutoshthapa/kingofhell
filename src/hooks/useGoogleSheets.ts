@@ -105,10 +105,8 @@ export function useGoogleSheets() {
           total_clan_games: Math.max(member.clanGames, existingData?.total_clan_games || 0),
           perfect_wars: member.perfectWarTickets,
           wars_missed: member.noWarMissTickets,
-          perfect_month: member.perfectMonthTickets > 0,
-          cwl_performance: member.cwlTickets === 5 ? 'excellent' : 
-                          member.cwlTickets === 3 ? 'good' : 
-                          member.cwlTickets === 1 ? 'average' : null,
+          perfect_month: member.perfectMonthTickets,
+          cwl_performance: member.cwlTickets,
           
           // Use GHIJ as direct ticket values (override calculated values)
           trophy_tickets: calculateTrophyTickets(member.trophy),

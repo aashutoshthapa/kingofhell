@@ -27,8 +27,8 @@ export type Database = {
           total_raid_gold: number
           perfect_wars: number
           wars_missed: number
-          perfect_month: boolean
-          cwl_performance: string | null
+          perfect_month: number
+          cwl_performance: number
           trophy_tickets: number
           donation_tickets: number
           clan_games_tickets: number
@@ -55,8 +55,8 @@ export type Database = {
           total_raid_gold?: number
           perfect_wars?: number
           wars_missed?: number
-          perfect_month?: boolean
-          cwl_performance?: string | null
+          perfect_month?: number
+          cwl_performance?: number
           trophy_tickets?: number
           donation_tickets?: number
           clan_games_tickets?: number
@@ -83,8 +83,8 @@ export type Database = {
           total_raid_gold?: number
           perfect_wars?: number
           wars_missed?: number
-          perfect_month?: boolean
-          cwl_performance?: string | null
+          perfect_month?: number
+          cwl_performance?: number
           trophy_tickets?: number
           donation_tickets?: number
           clan_games_tickets?: number
