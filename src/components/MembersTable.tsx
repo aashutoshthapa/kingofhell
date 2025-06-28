@@ -17,8 +17,8 @@ interface Member {
   total_clan_games: number;
   perfect_wars: number;
   wars_missed: number;
-  perfect_month: boolean | number;
-  cwl_performance?: string | number;
+  perfect_month: number;
+  cwl_performance: number;
   trophy_tickets: number;
   donation_tickets: number;
   clan_games_tickets: number;
@@ -149,8 +149,8 @@ export default function MembersTable({ members, darkMode = false }: MembersTable
             // Use GHIJ values as direct ticket values (from Google Sheets)
             const perfectWarTickets = member.perfect_wars || 0; // Column G
             const noWarMissTickets = member.wars_missed || 0; // Column H  
-            const perfectMonthTickets = typeof member.perfect_month === 'boolean' ? (member.perfect_month ? 5 : 0) : (member.perfect_month || 0); // Column I - handle both old and new format
-            const cwlTickets = typeof member.cwl_performance === 'string' ? 0 : (member.cwl_performance || 0); // Column J - handle both old and new format
+            const perfectMonthTickets = member.perfect_month || 0; // Column I - handle both old and new format
+            const cwlTickets = member.cwl_performance || 0; // Column J - handle both old and new format
             
             const totalTickets = trophyTickets + donationTickets + clanGamesTickets + raidTickets + 
                                perfectWarTickets + noWarMissTickets + perfectMonthTickets + cwlTickets;
