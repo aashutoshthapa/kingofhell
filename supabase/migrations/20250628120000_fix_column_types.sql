@@ -11,6 +11,10 @@
     - Convert existing string values: 'excellent' -> 5, 'good' -> 3, 'average' -> 1, others -> 0
 */
 
+-- First drop the default constraints
+ALTER TABLE clan_members ALTER COLUMN perfect_month DROP DEFAULT;
+ALTER TABLE clan_members ALTER COLUMN cwl_performance DROP DEFAULT;
+
 -- Change perfect_month from boolean to integer
 ALTER TABLE clan_members 
 ALTER COLUMN perfect_month TYPE integer USING 
@@ -30,7 +34,7 @@ ALTER COLUMN cwl_performance TYPE integer USING
     ELSE 0
   END;
 
--- Set default values for new columns
+-- Set new default values for the integer columns
 ALTER TABLE clan_members 
 ALTER COLUMN perfect_month SET DEFAULT 0,
 ALTER COLUMN cwl_performance SET DEFAULT 0; 

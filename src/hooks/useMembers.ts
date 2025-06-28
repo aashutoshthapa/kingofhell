@@ -29,23 +29,11 @@ export function useMembers() {
         const clanGamesTickets = calculateClanGamesTickets(member.clan_games_points)
         const raidTickets = calculateRaidTickets(member.current_capital_gold || 0)
         
-        // Calculate tickets for perfect wars (2 tickets each)
-        const perfectWarTickets = (member.perfect_wars || 0) * 2
-        
-        // Calculate tickets for no war miss (if wars_missed is 0, give 2 tickets)
-        const noWarMissTickets = (member.wars_missed || 0) === 0 ? 2 : 0
-        
-        // Calculate tickets for perfect month (5 tickets if true)
-        const perfectMonthTickets = member.perfect_month ? 5 : 0
-        
-        // Calculate tickets for CWL performance
-        let cwlTickets = 0
-        if (member.cwl_performance) {
-          const performance = member.cwl_performance.toLowerCase()
-          if (performance === 'excellent') cwlTickets = 5
-          else if (performance === 'good') cwlTickets = 3
-          else if (performance === 'average') cwlTickets = 1
-        }
+        // Use direct ticket values from database (from Google Sheets GHIJ columns)
+        const perfectWarTickets = member.perfect_wars || 0 // Column G
+        const noWarMissTickets = member.wars_missed || 0 // Column H
+        const perfectMonthTickets = member.perfect_month || 0 // Column I
+        const cwlTickets = member.cwl_performance || 0 // Column J
         
         const totalTickets = trophyTickets + donationTickets + clanGamesTickets + raidTickets + 
                            perfectWarTickets + noWarMissTickets + perfectMonthTickets + cwlTickets
