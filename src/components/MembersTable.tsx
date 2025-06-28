@@ -1,5 +1,5 @@
 import React from 'react';
-import { Trophy, Target, Ticket } from 'lucide-react';
+import { Target, Ticket } from 'lucide-react';
 import { calculateTrophyTickets, calculateDonationTickets, calculateClanGamesTickets, calculateRaidTickets } from '../utils/statsCalculator';
 
 interface Member {
@@ -76,7 +76,11 @@ export default function MembersTable({ members, darkMode = false }: MembersTable
   if (members.length === 0) {
     return (
       <div className={`text-center py-12 ${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
-        <Trophy className="mx-auto h-12 w-12 mb-4 opacity-50" />
+        <img 
+          src="/images/trophy.png" 
+          alt="Trophy" 
+          className="mx-auto h-12 w-12 mb-4 opacity-50" 
+        />
         <p className="text-lg font-medium">No clan members found</p>
         <p className="text-sm">Sync clan data to see members listed here.</p>
       </div>
@@ -175,7 +179,11 @@ export default function MembersTable({ members, darkMode = false }: MembersTable
                 {/* Trophy - API Data */}
                 <td className={`px-4 py-4 whitespace-nowrap text-sm font-medium ${darkMode ? 'text-yellow-400' : 'text-yellow-600'}`}>
                   <div className="flex items-center gap-1">
-                    <Trophy className="h-4 w-4" />
+                    <img 
+                      src="/images/trophy.png" 
+                      alt="Trophy" 
+                      className="h-4 w-4" 
+                    />
                     {formatNumber(member.current_trophies)}
                   </div>
                 </td>
@@ -192,7 +200,7 @@ export default function MembersTable({ members, darkMode = false }: MembersTable
                 <td className={`px-4 py-4 whitespace-nowrap text-sm font-medium ${darkMode ? 'text-green-400' : 'text-green-600'}`}>
                   <div className="flex items-center gap-1">
                     <img 
-                      src="/images/donation.png" 
+                      src="/images/cc.png" 
                       alt="Donation" 
                       className="h-4 w-4" 
                     />
@@ -212,7 +220,7 @@ export default function MembersTable({ members, darkMode = false }: MembersTable
                 <td className={`px-4 py-4 whitespace-nowrap text-sm ${darkMode ? 'text-purple-400' : 'text-purple-600'}`}>
                   <div className="flex items-center gap-1">
                     <img 
-                      src="/images/clan-games.png" 
+                      src="/images/cg.png" 
                       alt="Clan Games" 
                       className="h-4 w-4" 
                     />
@@ -232,7 +240,7 @@ export default function MembersTable({ members, darkMode = false }: MembersTable
                 <td className={`px-4 py-4 whitespace-nowrap text-sm font-medium ${darkMode ? 'text-orange-300' : 'text-orange-700'}`}>
                   <div className="flex items-center gap-1">
                     <img 
-                      src="/images/capital-gold.png" 
+                      src="/images/cggold.png" 
                       alt="Capital Gold" 
                       className="h-4 w-4" 
                     />
