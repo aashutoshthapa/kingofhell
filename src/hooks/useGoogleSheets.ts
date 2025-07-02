@@ -91,6 +91,17 @@ export function useGoogleSheets() {
       const updatedMembers = members.map(member => {
         const existingData = existingMembersMap.get(member.playerTag)
         
+        // Calculate ticket values
+        const trophyTickets = calculateTrophyTickets(member.trophy);
+        const donationTickets = calculateDonationTickets(member.donation);
+        const clanGamesTickets = calculateClanGamesTickets(member.clanGames);
+        const raidTickets = calculateRaidTickets(member.capGold);
+        const perfectWarTickets = member.perfectWarTickets || 0;
+        const noWarMissTickets = member.noWarMissTickets || 0;
+        const perfectMonthTickets = member.perfectMonthTickets || 0;
+        const cwlTickets = member.cwlTickets || 0;
+        const totalTickets = trophyTickets + donationTickets + clanGamesTickets + raidTickets + perfectWarTickets + noWarMissTickets + perfectMonthTickets + cwlTickets;
+        
         return {
           player_name: member.playerName,
           player_tag: member.playerTag,
@@ -105,16 +116,17 @@ export function useGoogleSheets() {
           total_donations: Math.max(member.donation, existingData?.total_donations || 0),
           clan_games_points: member.clanGames,
           total_clan_games: Math.max(member.clanGames, existingData?.total_clan_games || 0),
-          perfect_wars: member.perfectWarTickets,
-          wars_missed: member.noWarMissTickets,
-          perfect_month: member.perfectMonthTickets,
-          cwl_performance: member.cwlTickets,
+          perfect_wars: perfectWarTickets,
+          wars_missed: noWarMissTickets,
+          perfect_month: perfectMonthTickets,
+          cwl_performance: cwlTickets,
           
-          // Use GHIJ as direct ticket values (override calculated values)
-          trophy_tickets: calculateTrophyTickets(member.trophy),
-          donation_tickets: calculateDonationTickets(member.donation),
-          clan_games_tickets: calculateClanGamesTickets(member.clanGames),
-          raid_tickets: calculateRaidTickets(member.capGold),
+          // Store ticket values in the database
+          trophy_tickets: trophyTickets,
+          donation_tickets: donationTickets,
+          clan_games_tickets: clanGamesTickets,
+          raid_tickets: raidTickets,
+          total_tickets: totalTickets,
           
           // Achievement totals for tracking
           total_donations_achievement: Math.max(member.donation, existingData?.total_donations_achievement || 0),
