@@ -141,7 +141,7 @@ export function useGoogleSheets() {
           last_reset_clan_games: existingData?.last_reset_clan_games || 0,
           last_reset_date: existingData?.last_reset_date || new Date().toISOString(),
           
-          disqualified: member.disqualified,
+          disqualified: member.disqualified ? member.disqualified : "false",
           
           updated_at: new Date().toISOString()
         }
