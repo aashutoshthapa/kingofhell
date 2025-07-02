@@ -48,7 +48,7 @@ export function useGoogleSheets() {
         // Parse CSV line (handle commas in quoted fields)
         const columns = parseCSVLine(line)
         
-        if (columns.length >= 10 && columns[0] && columns[1]) {
+        if (columns.length >= 17 && columns[0] && columns[1]) {
           const member: SheetMember = {
             playerName: columns[0].trim(),
             playerTag: columns[1].trim(),
@@ -59,7 +59,8 @@ export function useGoogleSheets() {
             perfectWarTickets: parseInt(columns[6]) || 0,
             noWarMissTickets: parseInt(columns[7]) || 0,
             perfectMonthTickets: parseInt(columns[8]) || 0,
-            cwlTickets: parseInt(columns[9]) || 0
+            cwlTickets: parseInt(columns[9]) || 0,
+            discordUsername: columns[16]?.trim() || ""
           }
           
           // Only add if we have valid player name and tag
