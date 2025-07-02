@@ -14,6 +14,7 @@ export interface SheetMember {
   perfectMonthTickets: number
   cwlTickets: number
   discordUsername?: string
+  disqualified?: string
 }
 
 export function useGoogleSheets() {
@@ -48,7 +49,7 @@ export function useGoogleSheets() {
         // Parse CSV line (handle commas in quoted fields)
         const columns = parseCSVLine(line)
         
-        if (columns.length >= 17 && columns[0] && columns[1]) {
+        if (columns.length >= 18 && columns[0] && columns[1]) {
           const member: SheetMember = {
             playerName: columns[0].trim(),
             playerTag: columns[1].trim(),
@@ -60,7 +61,8 @@ export function useGoogleSheets() {
             noWarMissTickets: parseInt(columns[7]) || 0,
             perfectMonthTickets: parseInt(columns[8]) || 0,
             cwlTickets: parseInt(columns[9]) || 0,
-            discordUsername: columns[16]?.trim() || ""
+            discordUsername: columns[16]?.trim() || "",
+            disqualified: columns[17]?.trim() || ""
           }
           
           // Only add if we have valid player name and tag
@@ -138,6 +140,8 @@ export function useGoogleSheets() {
           last_reset_capital_gold: existingData?.last_reset_capital_gold || 0,
           last_reset_clan_games: existingData?.last_reset_clan_games || 0,
           last_reset_date: existingData?.last_reset_date || new Date().toISOString(),
+          
+          disqualified: member.disqualified,
           
           updated_at: new Date().toISOString()
         }

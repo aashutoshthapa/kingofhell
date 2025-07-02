@@ -7,6 +7,7 @@ interface Member {
   player_name: string;
   player_tag: string;
   discord_handle?: string;
+  disqualified?: string;
   current_trophies: number;
   total_trophies: number;
   current_donations: number;
@@ -136,6 +137,9 @@ export default function MembersTable({ members, darkMode = false }: MembersTable
             </th>
             <th className={`px-4 py-3 text-left text-xs font-medium uppercase tracking-wider ${darkMode ? 'text-gray-300' : 'text-gray-500'}`}>
               CWL
+            </th>
+            <th className={`px-4 py-3 text-left text-xs font-medium uppercase tracking-wider ${darkMode ? 'text-gray-300' : 'text-gray-500'}`}>
+              Disqualified
             </th>
             <th className={`px-4 py-3 text-left text-xs font-medium uppercase tracking-wider ${darkMode ? 'text-gray-300' : 'text-gray-500'}`}>
               Total Points
@@ -286,6 +290,11 @@ export default function MembersTable({ members, darkMode = false }: MembersTable
                     <Ticket className="h-4 w-4" />
                     <span className="font-bold">{cwlTickets}</span>
                   </div>
+                </td>
+                
+                {/* Disqualified - Show reason or checkmark/dash */}
+                <td className={`px-4 py-4 whitespace-nowrap text-sm ${member.disqualified ? 'text-red-500 font-bold' : 'text-green-500'}`}>
+                  {member.disqualified ? member.disqualified : <span title="Not disqualified">✔️</span>}
                 </td>
                 
                 {/* Total Points - Calculated */}
