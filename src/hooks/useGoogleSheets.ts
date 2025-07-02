@@ -13,6 +13,7 @@ export interface SheetMember {
   noWarMissTickets: number
   perfectMonthTickets: number
   cwlTickets: number
+  discordUsername?: string
 }
 
 export function useGoogleSheets() {
@@ -98,8 +99,8 @@ export function useGoogleSheets() {
           current_capital_gold: member.capGold,
           current_clan_games: member.clanGames,
           
-          // Preserve existing manual data for original fields
-          discord_handle: existingData?.discord_handle || null,
+          // Map discordUsername from sheet to discord_handle in DB
+          discord_handle: member.discordUsername || existingData?.discord_handle || null,
           total_donations: Math.max(member.donation, existingData?.total_donations || 0),
           clan_games_points: member.clanGames,
           total_clan_games: Math.max(member.clanGames, existingData?.total_clan_games || 0),
