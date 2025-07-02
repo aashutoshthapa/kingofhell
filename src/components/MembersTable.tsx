@@ -292,9 +292,9 @@ export default function MembersTable({ members, darkMode = false }: MembersTable
                   </div>
                 </td>
                 
-                {/* Disqualified - Show reason or checkmark/dash */}
-                <td className={`px-4 py-4 whitespace-nowrap text-sm ${member.disqualified ? 'text-red-500 font-bold' : 'text-green-500'}`}>
-                  {member.disqualified ? member.disqualified : <span title="Not disqualified">✔️</span>}
+                {/* Disqualified - Show reason or blank if not disqualified */}
+                <td className={`px-4 py-4 whitespace-nowrap text-sm ${member.disqualified && member.disqualified !== 'false' ? 'text-red-500 font-bold' : ''}`}>
+                  {member.disqualified && member.disqualified !== 'false' ? member.disqualified : ''}
                 </td>
                 
                 {/* Total Points - Calculated */}
