@@ -157,6 +157,17 @@ export function useGoogleSheets() {
 
       if (upsertError) throw upsertError
 
+      // Delete members not present in the latest sheet
+      const sheetTags = new Set(members.map(m => m.playerTag));
+      const dbTags = new Set((existingMembers || []).map(m => m.player_tag));
+      const tagsToDelete = Array.from(dbTags).filter(tag => !sheetTags.has(tag));
+      if (tagsToDelete.length > 0) {
+        await supabase
+          .from('clan_members')
+          .delete()
+          .in('player_tag', tagsToDelete);
+      }
+
       return { 
         syncedMembers: updatedMembers.length,
         members: updatedMembers
