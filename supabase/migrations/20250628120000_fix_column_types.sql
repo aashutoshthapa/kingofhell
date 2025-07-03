@@ -9,6 +9,9 @@
   2. Data Migration
     - Convert existing boolean values: true -> 5, false -> 0
     - Convert existing string values: 'excellent' -> 5, 'good' -> 3, 'average' -> 1, others -> 0
+
+  3. Remove unused column
+    - Remove `total_trophies` column as it's not being used
 */
 
 -- First drop the default constraints
@@ -37,4 +40,7 @@ ALTER COLUMN cwl_performance TYPE integer USING
 -- Set new default values for the integer columns
 ALTER TABLE clan_members 
 ALTER COLUMN perfect_month SET DEFAULT 0,
-ALTER COLUMN cwl_performance SET DEFAULT 0; 
+ALTER COLUMN cwl_performance SET DEFAULT 0;
+
+-- Remove unused total_trophies column
+ALTER TABLE clan_members DROP COLUMN total_trophies; 

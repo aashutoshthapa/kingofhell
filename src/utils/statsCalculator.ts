@@ -4,7 +4,6 @@ export interface MemberStats {
   player_tag: string
   discord_handle: string | null
   current_trophies: number
-  total_trophies: number
   current_donations: number
   current_capital_gold?: number
   current_clan_games?: number

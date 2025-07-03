@@ -108,7 +108,6 @@ export function useGoogleSheets() {
           player_name: member.playerName,
           player_tag: member.playerTag,
           current_trophies: member.trophy,
-          total_trophies: Math.max(member.trophy, existingData?.total_trophies || 0),
           current_donations: member.donation,
           current_capital_gold: member.capGold,
           current_clan_games: member.clanGames,

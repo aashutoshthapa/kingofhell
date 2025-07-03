@@ -15,7 +15,6 @@ export type Database = {
           player_tag: string
           discord_handle: string | null
           current_trophies: number
-          total_trophies: number
           current_donations: number
           total_donations: number
           clan_games_points: number
@@ -43,7 +42,6 @@ export type Database = {
           player_tag: string
           discord_handle?: string | null
           current_trophies?: number
-          total_trophies?: number
           current_donations?: number
           total_donations?: number
           clan_games_points?: number
@@ -71,7 +69,6 @@ export type Database = {
           player_tag?: string
           discord_handle?: string | null
           current_trophies?: number
-          total_trophies?: number
           current_donations?: number
           total_donations?: number
           clan_games_points?: number

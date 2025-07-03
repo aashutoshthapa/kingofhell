@@ -9,7 +9,6 @@ interface Member {
   discord_handle?: string;
   disqualified?: string;
   current_trophies: number;
-  total_trophies: number;
   current_donations: number;
   current_capital_gold?: number;
   current_clan_games?: number;
