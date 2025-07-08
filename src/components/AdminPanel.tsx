@@ -3,13 +3,12 @@ import { RefreshCw, Shield } from 'lucide-react'
 
 interface AdminPanelProps {
   darkMode: boolean
-  onDataUpdated: () => void
   onRefresh: () => void
   isRefreshing: boolean
   onLogout: () => void
 }
 
-export default function AdminPanel({ darkMode, onDataUpdated, onRefresh, isRefreshing, onLogout }: AdminPanelProps) {
+export default function AdminPanel({ darkMode, onRefresh, isRefreshing, onLogout }: AdminPanelProps) {
   return (
     <div className={`${darkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-200'} border rounded-xl p-6 mb-6`}>
       <div className="flex flex-col space-y-6">

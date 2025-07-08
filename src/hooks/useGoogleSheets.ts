@@ -13,6 +13,7 @@ export interface SheetMember {
   noWarMissTickets: number
   perfectMonthTickets: number
   cwlTickets: number
+  bonusTickets: number // <-- add this
   discordUsername?: string
   disqualified?: string
 }
@@ -49,7 +50,7 @@ export function useGoogleSheets() {
         // Parse CSV line (handle commas in quoted fields)
         const columns = parseCSVLine(line)
         
-        if (columns.length >= 18 && columns[0] && columns[1]) {
+        if (columns.length >= 21 && columns[0] && columns[1]) { // now require at least 21 columns
           const member: SheetMember = {
             playerName: columns[0].trim(),
             playerTag: columns[1].trim(),
@@ -61,10 +62,10 @@ export function useGoogleSheets() {
             noWarMissTickets: parseInt(columns[7]) || 0,
             perfectMonthTickets: parseInt(columns[8]) || 0,
             cwlTickets: parseInt(columns[9]) || 0,
+            bonusTickets: parseInt(columns[20]) || 0, // <-- column U
             discordUsername: columns[16]?.trim() || "",
             disqualified: columns[17]?.trim() || ""
           }
-          
           // Only add if we have valid player name and tag
           if (member.playerName && member.playerTag) {
             // Use Map to automatically handle duplicates - latest entry overwrites previous
@@ -102,7 +103,7 @@ export function useGoogleSheets() {
         const noWarMissTickets = member.noWarMissTickets || 0;
         const perfectMonthTickets = member.perfectMonthTickets || 0;
         const cwlTickets = member.cwlTickets || 0;
-        const totalTickets = trophyTickets + donationTickets + clanGamesTickets + raidTickets + perfectWarTickets + noWarMissTickets + perfectMonthTickets + cwlTickets;
+        const totalTickets = trophyTickets + donationTickets + clanGamesTickets + raidTickets + perfectWarTickets + noWarMissTickets + perfectMonthTickets + cwlTickets + (member.bonusTickets || 0);
         
         return {
           player_name: member.playerName,
@@ -111,6 +112,7 @@ export function useGoogleSheets() {
           current_donations: member.donation,
           current_capital_gold: member.capGold,
           current_clan_games: member.clanGames,
+          bonus_tickets: member.bonusTickets, // <-- upsert to DB
           
           // Map discordUsername from sheet to discord_handle in DB
           discord_handle: member.discordUsername || existingData?.discord_handle || null,

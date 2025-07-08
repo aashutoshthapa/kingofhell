@@ -26,6 +26,7 @@ interface Member {
   total_tickets: number;
   created_at: string;
   updated_at: string;
+  bonus_tickets?: number;
 }
 
 interface MembersTableProps {
@@ -139,6 +140,9 @@ export default function MembersTable({ members, darkMode = false }: MembersTable
             </th>
             <th className={`px-4 py-3 text-left text-xs font-medium uppercase tracking-wider ${darkMode ? 'text-gray-300' : 'text-gray-500'}`}>
               Disqualified
+            </th>
+            <th className={`px-4 py-3 text-left text-xs font-medium uppercase tracking-wider ${darkMode ? 'text-gray-300' : 'text-gray-500'}`}>
+              Bonus Tickets
             </th>
             <th className={`px-4 py-3 text-left text-xs font-medium uppercase tracking-wider ${darkMode ? 'text-gray-300' : 'text-gray-500'}`}>
               Total Points
@@ -294,6 +298,14 @@ export default function MembersTable({ members, darkMode = false }: MembersTable
                 {/* Disqualified - Show reason or blank if not disqualified */}
                 <td className={`px-4 py-4 whitespace-nowrap text-sm ${member.disqualified && member.disqualified !== 'false' ? 'text-red-500 font-bold' : ''}`}>
                   {member.disqualified && member.disqualified !== 'false' ? member.disqualified : ''}
+                </td>
+                
+                {/* Bonus Tickets - from Google Sheets column U */}
+                <td className={`px-4 py-4 whitespace-nowrap text-sm font-medium ${darkMode ? 'text-pink-400' : 'text-pink-600'}`}>
+                  <div className="flex items-center gap-1">
+                    <Ticket className="h-4 w-4" />
+                    <span className="font-bold">{member.bonus_tickets || 0}</span>
+                  </div>
                 </td>
                 
                 {/* Total Points - Calculated */}

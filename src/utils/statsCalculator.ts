@@ -19,6 +19,7 @@ export interface MemberStats {
   clan_games_tickets: number
   raid_tickets: number
   total_tickets: number
+  bonus_tickets?: number
   created_at: string
   updated_at: string
 }
