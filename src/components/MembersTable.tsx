@@ -164,7 +164,7 @@ export default function MembersTable({ members, darkMode = false }: MembersTable
             const cwlTickets = member.cwl_performance || 0; // Column J - handle both old and new format
             
             const totalTickets = trophyTickets + donationTickets + clanGamesTickets + raidTickets + 
-                               perfectWarTickets + noWarMissTickets + perfectMonthTickets + cwlTickets;
+              perfectWarTickets + noWarMissTickets + perfectMonthTickets + cwlTickets + (member.bonus_tickets || 0);
             
             return (
               <tr key={member.id} className={`hover:${darkMode ? 'bg-gray-800' : 'bg-gray-50'} transition-colors`}>
