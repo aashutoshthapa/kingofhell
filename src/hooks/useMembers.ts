@@ -17,6 +17,7 @@ export function useMembers() {
       const { data, error } = await supabase
         .from('clan_members')
         .select('*')
+        .order('total_tickets', { ascending: false })
 
       if (error) {
         throw error
@@ -52,8 +53,7 @@ export function useMembers() {
         }
       })
 
-      // Sort by total tickets in descending order (highest tickets first)
-      membersWithCalculatedTickets.sort((a, b) => b.total_tickets - a.total_tickets)
+      // Already sorted by Supabase query
 
       setMembers(membersWithCalculatedTickets)
     } catch (err) {
