@@ -44,9 +44,9 @@ export function calculateClanGamesTickets(points: number): number {
   return Math.min(Math.floor(points / 800), 5)
 }
 
-// Raid ticket calculation: 1 ticket per 10,000 capital gold
+// Raid ticket calculation: 1 ticket per 15,000 capital gold
 export function calculateRaidTickets(capitalGold: number): number {
-  return Math.floor(capitalGold / 10000)
+  return Math.floor(capitalGold / 15000)
 }
 
 export function calculateTotalTickets(member: Partial<MemberStats>): number {
