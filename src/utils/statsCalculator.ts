@@ -34,9 +34,9 @@ export function calculateTrophyTickets(trophies: number): number {
   return 0
 }
 
-// Donation ticket calculation: 1 ticket per 2500 donations
+// Donation ticket calculation: 1 ticket per 2000 donations
 export function calculateDonationTickets(donations: number): number {
-  return Math.floor(donations / 2500)
+  return Math.floor(donations / 2000)
 }
 
 // Clan games ticket calculation: 1 ticket per 800 points, capped at 5 tickets
